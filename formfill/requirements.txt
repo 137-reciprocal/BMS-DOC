@@ -1,0 +1,2 @@
+Pillow>=9.5.0  # For image handling
+python-docx>=0.8.11  # For generating Word documents

@@ -1,0 +1,56 @@
+{
+    "name": "Test Report",
+    "template_id": "test_report",
+    "document_info": {
+        "default_values": {
+            "document_number": "BMS-04-REP-",
+            "revision": "0",
+            "date": "auto"
+        },
+        "fields": [
+            {
+                "name": "document_number",
+                "label": "Document Number",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "revision",
+                "label": "Document Revision",
+                "type": "text",
+                "required": true
+            },
+            {
+                "name": "date",
+                "label": "Date",
+                "type": "date",
+                "required": true
+            }
+        ]
+    },
+    "sections": [
+        {
+            "title": "1 Introduction",
+            "type": "text_block",
+            "required": true
+        },
+        {
+            "title": "2 Test Details",
+            "type": "job_sections",
+            "required": true,
+            "fields": {
+                "work_order": "Work Order #",
+                "scope": "Test Scope",
+                "completion_date": "Date Completed",
+                "summary": "Test Summary",
+                "problems": "Issues Found",
+                "recommendations": "Recommendations",
+                "photos": {
+                    "type": "photo_section",
+                    "label": "Test Photos",
+                    "description_required": true
+                }
+            }
+        }
+    ]
+}
